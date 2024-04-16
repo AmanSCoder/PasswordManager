@@ -3,12 +3,12 @@ import hashlib
 import re
 import requests
 from pymongo import MongoClient
-# from flask_cors import CORS
+from flask_cors import CORS
 app = Flask(__name__)
 
 
-# CORS(app)
-# CORS(app, origins='http://localhost:5173', methods=['POST'], headers=['Content-Type'])
+CORS(app)
+CORS(app, origins='http://localhost:5173', methods=['POST'], headers=['Content-Type'])
 
 
 # Endpoint to return SHA-1 hash of the received string
