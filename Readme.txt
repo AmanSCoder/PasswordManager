@@ -41,6 +41,13 @@ Response format:
 {"message": "User does not exist"}
 
 
+for face authentication:
+Input format:
+
+Responseformat:
+{"message": "Face Authenticated"}
+{"message": "Face Not Authenticated"}
+
 for saving password
 /save
 Input format:
