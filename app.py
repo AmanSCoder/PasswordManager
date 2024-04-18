@@ -212,7 +212,14 @@ def check_user_exists(username,collection):
     else:
         return False
 
+@app.route('/face_auth',methods=['POST'])
+def face_auth():
 
+
+    if True:
+        return jsonify({"message": "Face Authenticated"})
+    else:
+        return jsonify({"message": "Face Not Authenticated"})
 
 if __name__ == '__main__':
     app.run()

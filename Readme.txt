@@ -55,4 +55,16 @@ Response format:
 
 
 
+for view of saved password
+Input format:
+{
+    "username":""
+}
+Response format:
+{
+    reference:password
+}
+
+
+
 
