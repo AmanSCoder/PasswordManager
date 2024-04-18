@@ -190,6 +190,28 @@ def savePassword():
         return jsonify({"message": "Password Added Successfully"})
 
 
+@app.route('/savedpassword',methods=['POST'])
+def savedPassword():
+    data=request.json
+    username=data['username']
+    client = MongoClient("mongodb+srv://aman:aman@cluster0.fundjn6.mongodb.net/")
+    db = client.PasswordManager
+    collection = db.SavedPassword
+    if check_user_exists(username,collection):
+        password=collection.find_one({"username": username})['password']
+        print(password)
+        return jsonify({"password": password})
+    else:
+        return jsonify({"message":"User doesn't exist"})
+
+
+def check_user_exists(username,collection):
+    user_document = collection.find_one({"username": username})
+    if user_document:
+        return True
+    else:
+        return False
+
 
 
 if __name__ == '__main__':
