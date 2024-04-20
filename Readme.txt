@@ -1,6 +1,6 @@
 For checking strength of password 
 Endpoint- "/strength"
-'''bash
+```bash
 Input format:
 {
     "password":password
@@ -12,7 +12,7 @@ Response format:
         'breach_status': status,
         'potential_issues': []
  }
-'''
+```
 
 
 For sign up-
