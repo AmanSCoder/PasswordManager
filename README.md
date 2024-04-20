@@ -1,5 +1,5 @@
-For checking strength of password 
-Endpoint- "/strength"
+# For checking strength of password 
+Endpoint- `/strength`
 ```bash
 Input format:
 {
@@ -15,8 +15,9 @@ Response format:
 ```
 
 
-For sign up-
-Endpoint- /adduser
+# For sign up-
+Endpoint- `/adduser`
+```bash
 Input format:
 {
     "username":username,
@@ -25,11 +26,12 @@ Input format:
 Response format:
 {"message":"user already exists"}
 {"message":"Account Successfully created"}
+```
 
 
-
-For login-
-Endpoint- /login
+# For login-
+Endpoint- `/login`
+```bash
 Input format:
 {
     "username":username,
@@ -39,11 +41,12 @@ Response format:
 {"message": "Login successful"}
 {"message": "Incorrect Password"}
 {"message": "User does not exist"}
+```
 
 
-
-for face authentication:
-Endpoint- /faceauth
+# For face authentication:
+Endpoint- `/faceauth`
+```bash
 Input format:
 {
 "image":[]
@@ -51,11 +54,11 @@ Input format:
 Responseformat:
 {"message": "Face Authenticated"}
 {"message": "Face Not Authenticated"}
+```
 
-
-
-for saving password
-Endpoint- /save
+# For saving password
+Endpoint- `/save`
+```bash
 Input format:
 {
     "username":username,
@@ -65,11 +68,12 @@ Input format:
 Response format:
 {"message": f"Password for {reference} Updated Successfully"}
 {"message": "Password Added Successfully"}
+```
 
 
-
-for view of saved password
-Endpoint- /savedpassword
+# For view of saved password
+Endpoint- `/savedpassword`
+```bash
 Input format:
 {
     "username":""
@@ -78,7 +82,7 @@ Response format:
 {
     reference:password
 }
-
+```
 
 
 
