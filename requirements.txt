@@ -3,12 +3,3 @@ Flask-Cors
 pymongo
 requests
 gunicorn
-torch
-torchvision
-pillow
-opencv-python
-numpy
-matplotlib
-flask
-pymongo
-imagehash
